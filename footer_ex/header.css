@@ -1,0 +1,95 @@
+html {
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;}
+body {
+    font-size: 1rem; 
+    overflow-x: hidden;
+    color: rgb(29, 29, 31);
+    letter-spacing: -0.05em;}
+
+.container {width: 100%; height: 2rem; border-bottom: 1px solid #ddd;
+         position: fixed;   }
+
+a {
+    color: rgb(29, 29, 31);
+    text-decoration: none;
+}
+/* DARK MODE CSS */
+.toggle
+{
+    position:absolute;
+    top:5px;
+    vertical-align:auto;
+    left: calc(50% -30px);
+    left: 90%;
+    width: 40px;
+    height: 30px;
+    /* background: #fff; */
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle::before
+{
+    content: '\f185';
+    font-family: fontAwesome;
+    font-size: 24px;
+}
+body.light .toggle
+{
+    /* background: black; */
+    color:#fff;
+}
+body.light .toggle::before
+{
+    content: '\f186';
+}
+body.light
+{
+    background: black;
+}
+body.light a{
+    color:white;
+}
+body.light .search_box label {
+    color: white;
+}
+/* DARK MODE CSS */
+
+.local-nav{
+    display: flex;
+    align-items: center;
+    max-width: 60rem;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-backdrop-filter: saturate(180%) blur(15px);
+    
+}
+.main-logo{
+    margin-right: auto;
+    font-weight: bold;
+}
+
+/* main-logo 제외 */
+.local-nav a:not(.main-logo){
+    margin-left: 2rem;
+}
+
+/* search-box */
+.search_box{
+    margin-right: auto;
+}
+#search-field{
+    width: 180px;
+    height: 28px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 3px 30px;
+    color: #999;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+}
