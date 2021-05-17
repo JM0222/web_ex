@@ -1,0 +1,33 @@
+body{
+    background: black;
+    overflow:hidden;
+}
+.title{
+    color:white;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    /* margin-top:10%; */
+}
+
+table{
+    margin:0 auto;
+}
+table.type1 {
+    border-top:1px solid red; border-bottom:1px solid #999;
+}
+table.type1 th,
+table.type1 td {border-top: 1px solid #ccc; border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;}
+
+table.type1 tr:first-child th,
+table.type1 tr:first-child td {border-top: none;}
+table.type1 th {padding: 10px 10px 10px 45px; text-align: left; font-weight: normal;
+font-size: 15px; color:white; height: 40px;}
+table.type1 th span {background: url("../images/icon.png") no-repeat -534px -5px;
+display: inline-block; width: 8px; height: 7px; overflow: hidden;
+color: transparent; vertical-align: 2px; margin:0 6px 0 -14px;}
+table.type1 td {padding:10px 55px; color:#777;}
+table.type1 td input[type="text"],
+table.type1 td input[type="password"],
+table.type1 td input[type="number"]{border:1px solid #ccc; height: 20px;}
